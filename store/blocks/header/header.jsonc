@@ -135,7 +135,10 @@
   },
 
   "minicart.v2": {
-    "children": ["minicart-base-content"]
+    "children": ["minicart-base-content"],
+    "props": {
+      "MinicartIcon": "icon-cart"
+    }
   },
   "minicart-base-content": {
     "blocks": ["minicart-product-list", "minicart-summary"]
