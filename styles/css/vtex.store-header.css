@@ -8,11 +8,22 @@
 }
 
 .headerRow--main-header :global(.vtex-menu-2-x-styledLink)  {
-  color: #727273;
+  color: #ffffff;
   font-size: 14px;
+}
+:global(.vtex-store-drawer-0-x-menuIcon)  {
+  color: #000000;
 }
 
 .headerRow--main-header-mobile .headerRowBackground {
   padding: 10px 0px;
-  background-color: #F0F0F0;
+  background-color: #ffffff;
+}
+
+.headerRow--sub-header-mobile :global(.vtex-store-components-3-x-searchBarContainer)  {
+  max-width: 600px;
+}
+.headerRow--sub-header-mobile :global(.vtex-input-prefix__group)  {
+  border-radius: 10px;
+  border: 1px solid #DDDDDD;
 }

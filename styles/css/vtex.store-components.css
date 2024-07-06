@@ -1,9 +1,41 @@
+@import url('https://fonts.googleapis.com/css2?family=Nunito+Sans:ital,opsz,wght@0,6..12,200..1000;1,6..12,200..1000&display=swap');
+
 .notificationBarContainer {
-  background-color: #E6F1E6;
-  color: #03034E;
+  background-color: #005CFF;
+  color: #FFFFFF;
+  font-family: "Nunito Sans", sans-serif;
   font-weight: 700;
-  font-size: 12px;
-  text-decoration: underline;
+  font-size: 14px;
+  text-decoration: none;
+  display: flex;
+  justify-content: center;
+  text-align: center;
+  align-items: center;
+}
+
+.notificationBarContainer--desktop-notify {
+  height: 30px;
+}
+.notificationBarContainer--mobile-notify {
+  height: 52px;
+  line-height: 22px;
+}
+
+.notificationContent--desktop-notify :first-child :first-child{
+  background-color: #6220C1;
+  padding: 0 4px;
+  border-radius: 4px;
+}
+.notificationContent--desktop-notify :first-child :last-child {
+  font-weight: 400;
+  font-style: italic;
+}
+.notificationContent--mobile-notify :first-child :first-child{
+  background-color: #6220C1;
+  padding: 0 4px;
+}
+.notificationContent--mobile-notify :first-child :last-child {
+  font-weight: 400;
 }
 
 .searchBarContainer {

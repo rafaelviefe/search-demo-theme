@@ -22,14 +22,15 @@
   },
 
   "header-row#2-desktop": {
-    "children": ["notification.bar#home"],
+    "children": ["notification.bar#home-desktop"],
     "props": {
       "fullWidth": "true"
     }
   },
-  "notification.bar#home": {
+  "notification.bar#home-desktop": {
     "props": {
-      "content": "SELECTED ITEMS ON SALE! CHECK IT OUT!"
+      "content": "Ganhe <span class=bloquinho>R$10,00</span> de desconto no seu primeiro pedido. Utilize o cupom <span class=desconto>DESCONTO10</span>",
+      "blockClass": "desktop-notify"
     }
   },
   "header-row#3-desktop": {
@@ -62,7 +63,8 @@
   "search-bar": {
     "blocks": ["autocomplete-result-list.v2"],
     "props": {
-      "openAutocompleteOnFocus": true
+      "openAutocompleteOnFocus": true,
+      "placeholder": "Digite aqui o que você procura"
     }
   },
   "logo#desktop": {
@@ -75,18 +77,35 @@
   },
 
   "header-layout.mobile": {
-    "children": ["header-row#1-mobile"]
+    "children": [
+      "header-row#2-mobile",
+      "header-row#1-mobile",
+      "header-row#3-mobile"
+    ]
+  },
+  "header-row#2-mobile": {
+    "children": [
+      "notification.bar#home-mobile"
+    ],
+    "props": {
+      "fullWidth": "true"
+    }
+  },
+  "notification.bar#home-mobile": {
+    "props": {
+      "content": "Ganhe <span class=bloquinho>R$10,00</span> de desconto no seu primeiro pedido.<br>Utilize o cupom <span class=desconto>DESCONTO10</span>",
+      "blockClass": "mobile-notify"
+    }
   },
   "header-row#1-mobile": {
     "children": [
       "drawer",
+      "header-spacer",
       "logo#mobile",
       "header-spacer",
-      "login",
       "minicart.v2"
     ],
     "props": {
-      "sticky": true,
       "blockClass": "main-header-mobile"
     }
   },
@@ -110,8 +129,8 @@
     "props": {
       "title": "Logo",
       "href": "/",
-      "url": "https://storecomponents.vteximg.com.br/arquivos/store-theme-logo-mobile.png",
-      "width": "70"
+      "url": "https://penseavanti.com.br/ecommerce/wp-content/themes/avanti/assets/img/logo-color.svg",
+      "width": "120px"
     }
   },
 
@@ -138,6 +157,14 @@
     "props": {
       "showTotal": true,
       "showDeliveryTotal": false
+    }
+  },
+  "header-row#3-mobile": {
+    "children": [
+      "search-bar"
+    ],
+    "props": {
+      "blockClass": "sub-header-mobile"
     }
   }
 }

@@ -1,3 +1,7 @@
 .biggy-autocomplete {
     overflow: auto;
 }
+
+.searchBarContainer {
+    max-width: 500px;
+}
