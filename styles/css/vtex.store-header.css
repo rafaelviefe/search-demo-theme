@@ -16,14 +16,34 @@
 }
 
 .headerRow--main-header-mobile .headerRowBackground {
-  padding: 10px 0px;
   background-color: #ffffff;
 }
 
 .headerRow--sub-header-mobile :global(.vtex-store-components-3-x-searchBarContainer)  {
-  max-width: 600px;
+  max-width: 100vw;
+  padding: 9px 3px 17px;
+}
+.headerRow--sub-header-mobile :global(.vtex-styleguide-9-x-input)  {
+  font-family: "Nunito Sans", sans-serif;
+  color: #000000;
+  font-weight: 600;
+  font-size: 14px;
+  line-height: 19.1px;
 }
 .headerRow--sub-header-mobile :global(.vtex-input-prefix__group)  {
   border-radius: 10px;
   border: 1px solid #DDDDDD;
+  height: 40px;
+}
+.headerRow--sub-header-mobile :global(.vtex-minicart-2-x-openIconContainer)  {
+  padding: 17px 3px 9px;
+}
+
+.headerRowContainer--main-header-desktop,
+.headerRowContainer--sub-header-desktop {
+  max-width: 1260px;
+}
+.headerRowContentContainer--main-header-desktop,
+.headerRowContentContainer--sub-header-desktop {
+  justify-content: center;
 }

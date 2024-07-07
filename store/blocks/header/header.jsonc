@@ -9,8 +9,8 @@
     "children": [
       "header-row#1-desktop",
       "header-row#2-desktop",
-      "header-row#3-desktop",
-      "header-row#4-desktop"
+      "header-row#5-desktop",
+      "header-row#6-desktop"
     ]
   },
 
@@ -42,6 +42,27 @@
     "props": {
       "blockClass": "menu-link",
       "inverted": "true"
+    }
+  },
+  "header-row#5-desktop": {
+    "children": [
+      "logo#desktop",
+      "search-bar",
+      "header-spacer",
+      "login",
+      "minicart.v2"
+    ],
+    "props": {
+      "blockClass": "main-header-desktop"
+    }
+  },
+  "header-row#6-desktop": {
+    "children": [
+      "drawer",
+      "vtex.menu@2.x:menu#category-menu"
+    ],
+    "props": {
+      "blockClass": "sub-header-desktop"
     }
   },
   "header-row#4-desktop": {
@@ -130,15 +151,12 @@
       "title": "Logo",
       "href": "/",
       "url": "https://penseavanti.com.br/ecommerce/wp-content/themes/avanti/assets/img/logo-color.svg",
-      "width": "120px"
+      "width": "165px"
     }
   },
 
   "minicart.v2": {
-    "children": ["minicart-base-content"],
-    "props": {
-      "MinicartIcon": "icon-cart"
-    }
+    "children": ["minicart-base-content"]
   },
   "minicart-base-content": {
     "blocks": ["minicart-product-list", "minicart-summary"]
