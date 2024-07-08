@@ -44,7 +44,7 @@
   color: #000000;
   font-weight: 600;
   font-size: 14px;
-  line-height: 19.1px;
+  line-height: 19px;
 }
 .flexRowContent :global(.vtex-input-prefix__group)  {
   border-radius: 10px;
