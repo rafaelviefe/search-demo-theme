@@ -21,7 +21,6 @@
 
 .headerRow--sub-header-mobile :global(.vtex-store-components-3-x-searchBarContainer)  {
   max-width: 100vw;
-  padding: 9px 3px 17px;
 }
 .headerRow--sub-header-mobile :global(.vtex-styleguide-9-x-input)  {
   font-family: "Nunito Sans", sans-serif;
@@ -46,4 +45,8 @@
 .headerRowContentContainer--main-header-desktop,
 .headerRowContentContainer--sub-header-desktop {
   justify-content: center;
+}
+
+.headerRowContainer--main-header-mobile {
+  min-width: 100%;
 }

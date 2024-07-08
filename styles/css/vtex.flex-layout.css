@@ -35,3 +35,29 @@
 .flexCol--switcherMobileCol {
   width: 20%;
 }
+
+.flexRowContent :global(.vtex-store-components-3-x-searchBarContainer)  {
+  max-width: 100vw;
+}
+.flexRowContent :global(.vtex-styleguide-9-x-input)::placeholder  {
+  font-family: "Nunito Sans", sans-serif;
+  color: #000000;
+  font-weight: 600;
+  font-size: 14px;
+  line-height: 19.1px;
+}
+.flexRowContent :global(.vtex-input-prefix__group)  {
+  border-radius: 10px;
+  border: 1px solid #DDDDDD;
+  height: 40px;
+}
+
+.flexCol--teguinha {
+  height: 132px;
+  justify-content: flex-end;
+}
+
+.flexRow--teguinha {
+  box-shadow: 0px 3px 0px rgba(0, 0, 0, 0.034);
+  margin-bottom: 4px;
+}

@@ -1,9 +1,9 @@
 {
   "header": {
-    "blocks": ["header-layout.desktop", "header-layout.mobile"]
+    "blocks": ["header-layout.desktop", "header-layout.mobile#1"]
   },
   "header.full": {
-    "blocks": ["header-layout.desktop", "header-layout.mobile"]
+    "blocks": ["header-layout.desktop", "header-layout.mobile#1"]
   },
   "header-layout.desktop": {
     "children": [
@@ -92,11 +92,34 @@
     "props": {
       "title": "Logo",
       "href": "/",
-      "url": "https://storecomponents.vteximg.com.br/arquivos/store-theme-logo.png",
+      "url": "https://penseavanti.com.br/ecommerce/wp-content/themes/avanti/assets/img/logo-color.svg",
       "width": "180"
     }
   },
 
+  "header-layout.mobile#1": {
+    "children": [
+      "header-row#2-mobile",
+      "flex-layout.row#mobile"
+    ]
+  },
+  "flex-layout.row#mobile": {
+    "children": [
+      "flex-layout.col#mobile"
+    ],
+    "props": {
+      "blockClass": "teguinha"
+    }
+  },
+  "flex-layout.col#mobile": {
+    "children": [
+      "header-row#1-mobile",
+      "search-bar"
+    ],
+    "props": {
+      "blockClass": "teguinha"
+    }
+  },
   "header-layout.mobile": {
     "children": [
       "header-row#2-mobile",
